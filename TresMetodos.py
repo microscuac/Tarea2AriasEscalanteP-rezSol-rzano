@@ -98,3 +98,17 @@ def LectorTlistaCadenat():
         
     
     file.close()
+
+  
+
+# Calculo de temperatura
+F = float(input("Digite la temperatura en Farhenheit: "))
+
+C = round((F - 32) / 1.8,2)
+
+if C < 19:
+    print("La temperatura esta fria:", C)
+elif  19 <= C <= 26:
+    print("La temperatura es agradable:", C)
+else:
+    print("La temperatura es caliente:", C)
